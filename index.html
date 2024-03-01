@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <form action="" method="get">
+        <div>
+            <label for="">Escribe tu nombre</label>
+            <input type="text" name="nombre" id="nombre" required> 
+        </div>
+        <br>
+        <div>
+            <label for="edad">Indica tu edad</label>
+            <input type="number" name="edad" id="edad" min="18" max="110">
+        </div>
+        <br>
+        <div>
+            <label for="tele">Teléfono</label>
+            <input type="tel" name="tel" id="tel">
+        </div>
+        <br>
+        <div>
+            <label for="email">indica tu email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="password">contraseña</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <br>
+        <div>
+            <input type="radio" name="operador" id="suma">
+            <label for="suma">Sumar</label>
+        </div>
+        <br>
+        <div>
+            <input type="radio" name="operador" id="resta">
+            <label for="resta">Restar</label>
+        </div>
+        <br>
+        <div>
+            <input type="radio" name="operador" id="multiplicar">
+            <label for="multiplicar">multiplicar</label>
+        </div>
+        <br>
+        <div>
+            <input type="radio" name="operador" id="dividir">
+            <label for="dividir">Dividir</label>
+        </div>
+        <br>
+ 
+
+        <!-- <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpiar datos">
+        </div> -->
+        <div>
+            <!-- <button type="submit">Enviar</button>  -->
+             <!-- el boton de submit va enviando sin salir del formulario
+            va bien sin pasar por js -->
+            <!-- <button type="reset">Limipar</button> -->
+
+            <button type="button" onclick="misDatos()">Enviar</button>
+        </div>
+       
+    </form>
+
+    <br><br><br>
+    <p id="frase">eperando tus datos</p>
+
+   
+   
+   
+
+    <script src="js/formulario.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
